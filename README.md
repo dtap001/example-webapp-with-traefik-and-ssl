@@ -2,8 +2,9 @@
 
 This is an example docker compose with traefik, a webapplication and cloudflare based dns validation
 
-Use this ansible playbook to deploy this compose project:
-<https://github.com/dtap001/example-webapp-with-traefik-and-ssl-ansible>
+There are two way to use this setup
+
+## Method 1 - Manual
 
 - ensure you have set the dns serverat your dns registrator to cloudflare:
   -  https://developers.cloudflare.com/dns/zone-setups/full-setup/setup/
@@ -17,3 +18,7 @@ Use this ansible playbook to deploy this compose project:
 -   ```
     docker compose up 
     ```
+
+## Method 2 - Ansible way
+- for more info go here:
+  - <https://github.com/dtap001/example-webapp-with-traefik-and-ssl-ansible>
