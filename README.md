@@ -11,9 +11,20 @@ There are two way to use this setup
 - create cloudflare api token:
   - https://developers.cloudflare.com/fundamentals/api/get-started/create-token/
 - create a PAT in github to chechout this  repo or the fork of it on your server
+  - https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token 
 - use that PAT to chechkout either repository
+  - cd opt
+  - mkdir my-application
+  - cd my-application
+  - ```
+    git clone https://{{ your_github_pat }}@{{ the_repository_url }}"
+    ```
+    #url ending with .git e.g.: github.com/dtap001/example-webapp-with-traefik-and-ssl .git
 - cp .env.example to .env in the final location of your project
-- fill the .env
+  - ```
+    cp .env.example .env
+    ```
+- fill the .env manually with the secrets
 - while standing inside the folder of the compose file
 -   ```
     docker compose up 
