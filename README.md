@@ -14,5 +14,6 @@ Use this ansible playbook to deploy this compose project:
 - cp .env.example to .env in the final location of your project
 - fill the .env
 - while standing inside the folder of the compose file
--   ```docker compose up -
+-   ```
+    docker compose up 
     ```
