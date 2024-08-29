@@ -13,9 +13,8 @@ There are two way to use this setup
 - create a PAT in github to chechout this  repo or the fork of it on your server
   - https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-fine-grained-personal-access-token 
 - use that PAT to chechkout either repository
-  - cd opt
-  - mkdir my-application
-  - cd my-application
+  - mkdir /opt/my-application
+  - cd /opt/my-application
   - ```
     git clone https://{{ your_github_pat }}@{{ the_repository_url }}"
     ```
